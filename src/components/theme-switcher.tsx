@@ -4,7 +4,9 @@ import { useState } from 'react';
 type Theme = 'light' | 'dark';
 
 export const ThemeSwitcher: React.FC = () => {
-  const [theme, setTheme] = useState<Theme>('light');
+  const [theme, setTheme] = useState<Theme>(() => {
+    return document.documentElement.getAttribute("data-theme") as Theme || "light"
+  });
 
 
   const toggleTheme = () => {
