@@ -1,0 +1,85 @@
+/*
+ * Default theme，适用于 core/mweb-base.scss。
+ * 取值参考 chrome 默认样式：
+ * https://chromium.googlesource.com/chromium/blink/+/refs/heads/main/Source/core/css/html.css
+ * 所有 import "core/mweb-base.scss" 的文件都应该同时导入此变量文件。
+ */
+ 
+/* color */
+// font
+$font-color: black;
+$link-color: -webkit-link;
+$del-font-color: inherit;
+$table-font-color: $font-color; // TODO: 把 default 主题的这类变量都移动到单独的文件
+// border
+$border-color: gray;
+// bg
+$mark-bg-color: yellow;
+$body-bg-color: white;
+$table-bg-color: $body-bg-color;
+
+/* font & line */
+$font-size: 16px;
+$h1-font-size: 2em;
+$h2-font-size: 1.5em;
+$h3-font-size: 1.17em;
+$h4-font-size: 1em;
+$h5-font-size: .83em;
+$h6-font-size: .67em;
+$table-font-size: 1em;
+$th-font-size: $table-font-size;
+$td-font-size: $table-font-size;
+
+$bold-font-weight: bold;
+$italic-font-style: italic;
+$h1-font-weight: bold;
+$h2-font-weight: bold;
+$h3-font-weight: bold;
+$h4-font-weight: bold;
+$h5-font-weight: bold;
+$h6-font-weight: bold;
+$th-font-weight: bold;
+$td-font-weight: normal;
+
+$font-family: PingFang SC, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+$code-font-family: monospace, Menlo-Regular, Menlo, Monaco, Consolas, 'Courier New';
+
+$line-height: 1.6em;
+
+/* boxing */
+$md-body-max-width: 46rem;
+
+$md-body-mg-h: auto;
+$md-body-mg-v: 0px;
+$md-body-pd-h: 3.2rem;
+$md-body-pd-v: 1.6rem;
+
+$block-mg-t: 0.75em;
+$block-mg-b: 0.75em;
+$h1-mg-t: 2 * $block-mg-t;
+$h1-mg-b: $block-mg-b;
+$h2-mg-t: 2 * $block-mg-t;
+$h2-mg-b: $block-mg-b;
+$h3-mg-t: 2 * $block-mg-t;
+$h3-mg-b: $block-mg-b;
+$h4-mg-t: 2 * $block-mg-t;
+$h4-mg-b: $block-mg-b;
+$h5-mg-t: 2 * $block-mg-t;
+$h5-mg-b: $block-mg-b;
+$h6-mg-t: 2 * $block-mg-t;
+$h6-mg-b: $block-mg-b;
+$th-pd-v: 4px;
+$th-pd-h: 8px;
+$td-pd-v: 4px;
+$td-pd-h: 8px;
+$li-mg-t: .25em;
+
+/* elememts */
+$hr-bd-style: inset;
+$hr-bd-width: 1px;
+
+$table-border-spacing: 2px;
+$table-border-width: 1px;
+$table-border-style: solid;
+
+$link-decoration: underline;
